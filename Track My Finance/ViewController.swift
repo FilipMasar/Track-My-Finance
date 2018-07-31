@@ -8,18 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+var state = ""
 
+class ViewController: UIViewController {
+    
+    @IBAction func incomeButtonClicked(_ sender: Any) {
+        state = "income"
+        performSegue(withIdentifier: "incomeSegue", sender: nil)
+    }
+    
+    @IBAction func outgoingButtonClicked(_ sender: Any) {
+        state = "outcome"
+        performSegue(withIdentifier: "outgoingSegue", sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

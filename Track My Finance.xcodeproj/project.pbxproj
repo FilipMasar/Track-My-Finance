@@ -14,6 +14,9 @@
 		DC1AAF992110AA2D00177A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1AAF972110AA2D00177A85 /* LaunchScreen.storyboard */; };
 		DC1AAFA42110AA2D00177A85 /* Track_My_FinanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1AAFA32110AA2D00177A85 /* Track_My_FinanceTests.swift */; };
 		DC1AAFAF2110AA2D00177A85 /* Track_My_FinanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1AAFAE2110AA2D00177A85 /* Track_My_FinanceUITests.swift */; };
+		DC1AAFBD2110ABB200177A85 /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1AAFBC2110ABB200177A85 /* IncomeViewController.swift */; };
+		DC1AAFBF2110ABC200177A85 /* OutgoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1AAFBE2110ABC200177A85 /* OutgoingViewController.swift */; };
+		DC1AAFC12110B16400177A85 /* NewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1AAFC02110B16400177A85 /* NewRecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		DC1AAFAA2110AA2D00177A85 /* Track My FinanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Track My FinanceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1AAFAE2110AA2D00177A85 /* Track_My_FinanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track_My_FinanceUITests.swift; sourceTree = "<group>"; };
 		DC1AAFB02110AA2D00177A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC1AAFBC2110ABB200177A85 /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
+		DC1AAFBE2110ABC200177A85 /* OutgoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingViewController.swift; sourceTree = "<group>"; };
+		DC1AAFC02110B16400177A85 /* NewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				DC1AAF8E2110AA2D00177A85 /* AppDelegate.swift */,
 				DC1AAF902110AA2D00177A85 /* ViewController.swift */,
+				DC1AAFBC2110ABB200177A85 /* IncomeViewController.swift */,
+				DC1AAFBE2110ABC200177A85 /* OutgoingViewController.swift */,
+				DC1AAFC02110B16400177A85 /* NewRecordViewController.swift */,
 				DC1AAF922110AA2D00177A85 /* Main.storyboard */,
 				DC1AAF952110AA2D00177A85 /* Assets.xcassets */,
 				DC1AAF972110AA2D00177A85 /* LaunchScreen.storyboard */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1AAFBD2110ABB200177A85 /* IncomeViewController.swift in Sources */,
 				DC1AAF912110AA2D00177A85 /* ViewController.swift in Sources */,
+				DC1AAFBF2110ABC200177A85 /* OutgoingViewController.swift in Sources */,
 				DC1AAF8F2110AA2D00177A85 /* AppDelegate.swift in Sources */,
+				DC1AAFC12110B16400177A85 /* NewRecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
