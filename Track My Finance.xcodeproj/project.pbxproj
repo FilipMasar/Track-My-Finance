@@ -17,6 +17,7 @@
 		DC1AAFBD2110ABB200177A85 /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1AAFBC2110ABB200177A85 /* IncomeViewController.swift */; };
 		DC1AAFBF2110ABC200177A85 /* OutgoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1AAFBE2110ABC200177A85 /* OutgoingViewController.swift */; };
 		DC1AAFC12110B16400177A85 /* NewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1AAFC02110B16400177A85 /* NewRecordViewController.swift */; };
+		DC1AAFC32110C5E600177A85 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1AAFC22110C5E600177A85 /* RecordTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DC1AAFBC2110ABB200177A85 /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
 		DC1AAFBE2110ABC200177A85 /* OutgoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingViewController.swift; sourceTree = "<group>"; };
 		DC1AAFC02110B16400177A85 /* NewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecordViewController.swift; sourceTree = "<group>"; };
+		DC1AAFC22110C5E600177A85 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				DC1AAFBE2110ABC200177A85 /* OutgoingViewController.swift */,
 				DC1AAFC02110B16400177A85 /* NewRecordViewController.swift */,
 				DC1AAF922110AA2D00177A85 /* Main.storyboard */,
+				DC1AAFC22110C5E600177A85 /* RecordTableViewCell.swift */,
 				DC1AAF952110AA2D00177A85 /* Assets.xcassets */,
 				DC1AAF972110AA2D00177A85 /* LaunchScreen.storyboard */,
 				DC1AAF9A2110AA2D00177A85 /* Info.plist */,
@@ -270,6 +273,7 @@
 			files = (
 				DC1AAFBD2110ABB200177A85 /* IncomeViewController.swift in Sources */,
 				DC1AAF912110AA2D00177A85 /* ViewController.swift in Sources */,
+				DC1AAFC32110C5E600177A85 /* RecordTableViewCell.swift in Sources */,
 				DC1AAFBF2110ABC200177A85 /* OutgoingViewController.swift in Sources */,
 				DC1AAF8F2110AA2D00177A85 /* AppDelegate.swift in Sources */,
 				DC1AAFC12110B16400177A85 /* NewRecordViewController.swift in Sources */,
