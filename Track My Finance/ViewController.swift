@@ -14,12 +14,12 @@ class ViewController: UIViewController {
     
     @IBAction func incomeButtonClicked(_ sender: Any) {
         state = "income"
-        performSegue(withIdentifier: "incomeSegue", sender: nil)
+        performSegue(withIdentifier: "viewSegue", sender: nil)
     }
     
     @IBAction func outgoingButtonClicked(_ sender: Any) {
-        state = "outcome"
-        performSegue(withIdentifier: "outgoingSegue", sender: nil)
+        state = "outgoing"
+        performSegue(withIdentifier: "viewSegue", sender: nil)
     }
     
     override func viewDidLoad() {

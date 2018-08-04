@@ -38,67 +38,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="5sE-Kr-PF4" kind="presentation" identifier="incomeSegue" id="6Lj-GP-FgM"/>
-                        <segue destination="k4a-t3-Kbl" kind="presentation" identifier="outgoingSegue" id="eeD-Yp-xOZ"/>
+                        <segue destination="5sE-Kr-PF4" kind="presentation" identifier="viewSegue" id="6Lj-GP-FgM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--Outgoing View Controller-->
-        <scene sceneID="Fwy-nK-Oqd">
-            <objects>
-                <viewController id="k4a-t3-Kbl" customClass="OutgoingViewController" customModule="Track_My_Finance" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UMb-BF-5q4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5N-i4-khS">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Outgoings" id="D77-Jd-o2G">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="goE-7C-jXV">
-                                            <connections>
-                                                <action selector="backButtonClicked:" destination="k4a-t3-Kbl" id="jTR-Um-6wz"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-6x-wCf">
-                                <rect key="frame" x="131" y="84" width="113" height="30"/>
-                                <state key="normal" title="Add new Record"/>
-                                <connections>
-                                    <action selector="addButtonClicked:" destination="k4a-t3-Kbl" eventType="touchUpInside" id="GWx-9U-7UX"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="NNg-6x-wCf" firstAttribute="centerX" secondItem="UMb-BF-5q4" secondAttribute="centerX" id="bLn-Dz-ncj"/>
-                            <constraint firstItem="axp-hD-9kt" firstAttribute="trailing" secondItem="y5N-i4-khS" secondAttribute="trailing" id="gaT-VI-Xs3"/>
-                            <constraint firstItem="NNg-6x-wCf" firstAttribute="top" secondItem="y5N-i4-khS" secondAttribute="bottom" constant="20" id="hTz-4o-aDv"/>
-                            <constraint firstItem="y5N-i4-khS" firstAttribute="leading" secondItem="UMb-BF-5q4" secondAttribute="leading" id="i1X-X8-QVa"/>
-                            <constraint firstItem="y5N-i4-khS" firstAttribute="leading" secondItem="UMb-BF-5q4" secondAttribute="leading" id="i5Z-dI-CcI"/>
-                            <constraint firstItem="y5N-i4-khS" firstAttribute="top" secondItem="axp-hD-9kt" secondAttribute="top" id="qhF-Fa-hOb"/>
-                            <constraint firstItem="y5N-i4-khS" firstAttribute="top" secondItem="axp-hD-9kt" secondAttribute="top" id="s8Y-dl-hJQ"/>
-                            <constraint firstItem="axp-hD-9kt" firstAttribute="trailing" secondItem="y5N-i4-khS" secondAttribute="trailing" id="zFL-df-uKL"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="axp-hD-9kt"/>
-                    </view>
-                    <connections>
-                        <segue destination="I7v-Ds-whP" kind="presentation" identifier="addOutgoingSegue" id="vOc-Yc-Z6G"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bM1-at-5dR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="991" y="510"/>
-        </scene>
-        <!--Income View Controller-->
+        <!--View Controller-->
         <scene sceneID="Qaa-ac-fsH">
             <objects>
-                <viewController id="5sE-Kr-PF4" customClass="IncomeViewController" customModule="Track_My_Finance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5sE-Kr-PF4" customClass="IOViewController" customModule="Track_My_Finance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hy4-IE-RJV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +59,7 @@
                                     <navigationItem title="Incomes" id="6u9-6f-bnI">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="Mmv-I5-fFg">
                                             <connections>
-                                                <action selector="backButtonClicked:" destination="5sE-Kr-PF4" id="NAe-ba-xLw"/>
+                                                <action selector="backButtonClicked:" destination="5sE-Kr-PF4" id="V7d-rb-rA7"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -119,16 +69,16 @@
                                 <rect key="frame" x="133" y="84" width="109" height="30"/>
                                 <state key="normal" title="Add new record"/>
                                 <connections>
-                                    <action selector="addButtonClicked:" destination="5sE-Kr-PF4" eventType="touchUpInside" id="M8n-af-C7R"/>
+                                    <action selector="addButtonClicked:" destination="5sE-Kr-PF4" eventType="touchUpInside" id="EGb-J5-pi7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+100 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cle-MS-MXM">
-                                <rect key="frame" x="137.5" y="122" width="99.5" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cle-MS-MXM">
+                                <rect key="frame" x="175" y="122" width="25" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.28286121352221849" green="0.65819300518134716" blue="0.042803325919731183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uD3-av-DAC" customClass="Rec">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uD3-av-DAC">
                                 <rect key="frame" x="0.0" y="178" width="375" height="489"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -211,14 +161,15 @@
                         <viewLayoutGuide key="safeArea" id="arb-Sf-XMb"/>
                     </view>
                     <connections>
-                        <outlet property="table" destination="uD3-av-DAC" id="0Gw-aF-ERf"/>
-                        <outlet property="totalLabel" destination="cle-MS-MXM" id="Tvz-13-5Jw"/>
-                        <segue destination="I7v-Ds-whP" kind="presentation" identifier="addIncomeSegue" id="yLK-Hz-6qr"/>
+                        <outlet property="navBarTitle" destination="6u9-6f-bnI" id="8fo-o6-e1Z"/>
+                        <outlet property="table" destination="uD3-av-DAC" id="TVw-38-9BG"/>
+                        <outlet property="totalLabel" destination="cle-MS-MXM" id="KJf-Bg-x3Y"/>
+                        <segue destination="I7v-Ds-whP" kind="presentation" identifier="addRecordSegue" id="yLK-Hz-6qr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7S-Um-4RA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992.79999999999995" y="-183.05847076461771"/>
+            <point key="canvasLocation" x="982" y="134"/>
         </scene>
         <!--New Record View Controller-->
         <scene sceneID="vcf-od-Nle">
@@ -312,10 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlg-9u-pFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1938.4000000000001" y="139.880059970015"/>
+            <point key="canvasLocation" x="1826" y="134"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="yLK-Hz-6qr"/>
-    </inferredMetricsTieBreakers>
 </document>

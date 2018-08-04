@@ -16,6 +16,15 @@ class NewRecordViewController: UIViewController {
     @IBOutlet weak var amountTextField: UITextField!
     
     var dataStored = [[String:String]]()
+    
+    // ALERT
+    func showAlert(title:String, message:String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
 
     @IBAction func addButtonClicked(_ sender: Any) {
         let dateFormatter = DateFormatter()
@@ -33,11 +42,15 @@ class NewRecordViewController: UIViewController {
                     // SAVE DATA
                     if state == "income" {
                         UserDefaults.standard.set(dataStored, forKey: "incomes")
+                        showAlert(title: "Success", message: "Income added!")
                     } else {
                         UserDefaults.standard.set(dataStored, forKey: "outgoings")
+                        showAlert(title: "Success", message: "Outgoing added!")
                     }
                 }
             }
+        } else {
+            showAlert(title: "Missing information", message: "You have to provide reason and amount!")
         }
     }
     
@@ -65,20 +78,9 @@ class NewRecordViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // close keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
